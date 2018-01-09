@@ -66,6 +66,8 @@
 		4D36000C1F466D33002BE771 /* BranchEvent.Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D36000B1F466D33002BE771 /* BranchEvent.Test.m */; };
 		4D385D0B1EE1D53200A549EC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D385D0A1EE1D53200A549EC /* Security.framework */; };
 		4D3FA94B1DFF31EB00E2B6A9 /* BNCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FA94A1DFF31EB00E2B6A9 /* BNCConfig.m */; };
+		4D40061A1FFED1BB004BE326 /* iOS 11 Discussion.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4D4006191FFED1BB004BE326 /* iOS 11 Discussion.mp4 */; };
+		4D40061C1FFEDA4A004BE326 /* iOS 11 Discussion2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4D40061B1FFEDA4A004BE326 /* iOS 11 Discussion2.mp4 */; };
 		4D41123D1FE8976400C44FA5 /* BranchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D4DAC201C8FA8C0008E37DB /* BranchView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D698B7D1FB287A700AFF38C /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67163AAD1B9A036F007A8AB1 /* SafariServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		4D8999ED1DC108FF00F7EE0A /* BNCAvailability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8999EB1DC108FF00F7EE0A /* BNCAvailability.m */; };
@@ -279,6 +281,8 @@
 		4D36000B1F466D33002BE771 /* BranchEvent.Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchEvent.Test.m; sourceTree = "<group>"; };
 		4D385D0A1EE1D53200A549EC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4D3FA94A1DFF31EB00E2B6A9 /* BNCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCConfig.m; sourceTree = "<group>"; };
+		4D4006191FFED1BB004BE326 /* iOS 11 Discussion.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOS 11 Discussion.mp4"; sourceTree = "<group>"; };
+		4D40061B1FFEDA4A004BE326 /* iOS 11 Discussion2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOS 11 Discussion2.mp4"; sourceTree = "<group>"; };
 		4D8999EA1DC108FF00F7EE0A /* BNCAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCAvailability.h; sourceTree = "<group>"; };
 		4D8999EB1DC108FF00F7EE0A /* BNCAvailability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCAvailability.m; sourceTree = "<group>"; };
 		4D8EE7A31E1F0A5D00B1F450 /* BNCCommerceEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCCommerceEvent.h; sourceTree = "<group>"; };
@@ -589,6 +593,8 @@
 		6700166A1940F51400A9E103 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4D4006191FFED1BB004BE326 /* iOS 11 Discussion.mp4 */,
+				4D40061B1FFEDA4A004BE326 /* iOS 11 Discussion2.mp4 */,
 				6700166B1940F51400A9E103 /* Branch-TestBed-Info.plist */,
 				6700166C1940F51400A9E103 /* InfoPlist.strings */,
 				6700166F1940F51400A9E103 /* main.m */,
@@ -971,10 +977,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6700166E1940F51400A9E103 /* InfoPlist.strings in Resources */,
+				4D40061A1FFED1BB004BE326 /* iOS 11 Discussion.mp4 in Resources */,
 				4DE235641FB12C2700D4E5A9 /* Main.storyboard in Resources */,
 				63E4C4901D25E1BC00A45FD8 /* LaunchScreen.storyboard in Resources */,
 				63E4C4921D25E1CA00A45FD8 /* Assets.xcassets in Resources */,
 				677F4CB51C1FB1910029F2B3 /* Branch-TestBed.entitlements in Resources */,
+				4D40061C1FFEDA4A004BE326 /* iOS 11 Discussion2.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1353,7 +1361,7 @@
 				GCC_PREFIX_HEADER = "Branch-TestBed/Branch-TestBed-Prefix.pch";
 				INFOPLIST_FILE = "Branch-TestBed/Branch-TestBed-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.branch.sdk.Branch-TestBed";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.branch.sdk.Branch-TestBed-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR;
@@ -1374,7 +1382,7 @@
 				GCC_PREFIX_HEADER = "Branch-TestBed/Branch-TestBed-Prefix.pch";
 				INFOPLIST_FILE = "Branch-TestBed/Branch-TestBed-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.branch.sdk.Branch-TestBed";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.branch.sdk.Branch-TestBed-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR;

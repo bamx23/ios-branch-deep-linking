@@ -169,11 +169,21 @@
 
 #pragma mark - getUpdateState Suite
 
++ (NSDate*) dateWithString:(NSString*)string {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]]; // POSIX to avoid weird issues
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss ZZZZZ"];
+    return [dateFormatter dateFromString:string];
+}
+
 + (NSNumber*) getUpdateState {
 
     NSDate * buildDate = [self appBuildDate];
+    //NSDate * buildDate = [self dateWithString:@"2018-01-03 23:48:17 +0000"];
     NSDate * appInstallDate = [self appInstallDate];
+    //NSDate * appInstallDate = [self dateWithString:@"2018-01-03 23:49:19 +0000"];
     NSString *storedAppVersion = [BNCPreferenceHelper preferenceHelper].appVersion;
+    //NSString *storedAppVersion = nil;
     NSString *currentAppVersion = [self getAppVersion];
 
     BNCUpdateState result =
@@ -240,7 +250,9 @@
         return BNCUpdateStateInstall;
     }
 
-    if ([buildDate compare:appInstallDate] > 0) {
+    NSComparisonResult cr = [buildDate compare:appInstallDate];
+    if (cr > 0) {
+    //if ([buildDate compare:appInstallDate] > 0) {
         return BNCUpdateStateUpdate;
     }
 
